@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/static/style.css">
+  <script defer src="/static/script.js"></script>
+  <title>VOX Dashboard</title>
+</head>
+
+<body>
+
+<div class="dashboard">
+
+  <div class="navbar">
+    <h1>VOX Dashboard</h1>
+    <a href="/" class="btn btn-secondary">Logout</a>
+  </div>
+
+  <div class="card">
+    <h2>Voice Control Center</h2>
+    <p>Try saying <b>"open textedit"</b> or <b>"write program to add two numbers"</b></p>
+
+    <div id="status" class="status">Status: idle</div>
+
+    <button id="startBtn" class="btn btn-primary">🎤 Start Listening</button>
+    <button id="stopBtn" class="btn btn-secondary" disabled>⛔ Stop</button>
+
+    <h3>Transcript</h3>
+    <pre id="textOut"></pre>
+
+    <h3>System Response</h3>
+    <pre id="respOut"></pre>
+  </div>
+
+  <div class="card">
+    <h2>Generated Files</h2>
+    <ul id="filesList"></ul>
+  </div>
+
+</div>
+
+</body>
+</html>
