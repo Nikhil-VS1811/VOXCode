@@ -1,2 +1,2 @@
-ndiff==7.99
-wheel==0.47.0
+Flask>=3.1.0
+gunicorn
